@@ -1,0 +1,533 @@
+/*Name: SMRITI KOHLI
+Section: CST 8285 300_301
+File Name: assignment01.css
+Date:March 2nd, 2025
+Purpose: This is the external CSS file of my website which adds formatting and design to my website.*/
+
+/*Index.html page CSS starts*/
+#indexBody {
+    background-color: #5C6BC0; /* White background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333333; /* Dark grey text */
+    font-size: x-small;
+}
+/* Container for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #66BB6A; /* Match your header background */
+    z-index: 1;
+}
+/* Dropdown links */
+.dropdown-content a {
+    color: white; /* Text color */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color:#5C6BC0; /* Highlight on hover */
+}
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Style the dropdown button */
+.dropdown-btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+/* Hover effect for the dropdown button */
+.dropdown-btn:hover {
+    color: white;
+}
+#header {
+    padding: 10px 0;
+    background-color: #5C6BC0; /* Muted blue header background */
+}
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #66BB6A; /* Header background color */
+    height: 10px;
+}
+#logo {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto;  /* Maintain aspect ratio */
+}
+#navButtons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background-color: #66BB6A; /* Soft green for navigation background */
+}
+#navButtons li {
+    margin: 0 15px;
+}
+#navButtons a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text for navigation links */
+    font-weight: bold;
+    font-size: 0.6rem;
+    padding: 5px 10px;
+    transition:  color 0.3s ease;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block; /* Ensures buttons align properly */
+    vertical-align: middle; /* Aligns text vertically */
+}
+#navButtons a:hover {
+    color: #333333; /* Dark grey text on hover */
+}
+.indexContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #F9F9F9; /* Light greyish-white for content container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+#myPic {
+    float: right;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #66BB6A; /* Soft green border */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for emphasis */
+}
+h1 {
+    color: #66BB6A; /* Muted blue for the main heading */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+h3 {
+    color: #66BB6A; /* Soft green for subheadings */
+    text-align: center;
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#div1{
+    margin-top: 0%;
+}
+#font {
+    margin-top: 1px;
+    font-family: 'Georgia', serif;
+    font-size: small;
+    color: #333333; /* Dark grey for paragraph text */
+    font-family:initial;
+}
+#footer {
+    position: relative;
+    text-align: center;
+    background-color: #F9F9F9; /* Light grey for footer */
+    padding: 20px 0;
+    margin-top: 20px;
+}
+#footer h2 {
+    color: #5C6BC0; /* Muted blue for footer heading */
+    font-size: 0.9rem;
+    font-family: cursive;
+}
+#copyRight {
+    position: absolute; /* Allows precise positioning within the footer */
+    bottom: 0px; /* Distance from the bottom of the footer */
+    right: 10px; /* Distance from the right edge of the footer */
+    font-size: xx-small; /* Adjust font size if needed */
+    color:black; /* Subtle text color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#socialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-button {
+    text-decoration: none;
+    color: #FFFFFF; /* White icon color */
+    background-color: #66BB6A; /* Soft green background */
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+.social-button:hover {
+    background-color: #5C6BC0; /* Muted blue on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+@media (max-width: 768px) {
+    .indexContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #myPic {
+        margin-top: 15px;
+    }
+}/*Index.html page CSS ends*/
+
+/*Resume.html page CSS starts*/
+#Rbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #5C6BC0; /* White background */
+    color: #333333; /* Dark grey text color */
+    font-size: x-small;
+}
+#Rheader {
+    background-color: #5C6BC0; /* Muted blue background */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 4px solid #66BB6A; /* Soft green border accent */
+}
+#Rh1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #C5E1A5;
+}
+#Rheaderp, #Rheader a {
+    color: #C5E1A5; /* Soft green text */
+    text-decoration: none;
+}
+#Rheader a:hover {
+    color: #66BB6A; /* Soft green hover effect */
+    text-decoration: underline;
+}
+#Rsec1, section {
+    margin: 20px 40px;
+    padding: 20px;
+    background-color: #F9F9F9; /* Light greyish white background for contrast */
+    border: 1px solid #E0E0E0; /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+#Rh2, section h2 {
+    color: #5C6BC0; /* Muted blue */
+    border-bottom: 2px solid #66BB6A; /* Soft green underline */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+article h3 {
+    color: #66BB6A; /* Soft green for article headings */
+    margin-bottom: 5px;
+}
+#RArtP {
+    color: #333333; /* Dark grey text for paragraph */
+    font-style: italic;
+}
+article ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+#Rul1 .Rli1 {
+    margin-bottom: 5px;
+    color: #555555; /* Medium grey text for list items */
+}
+ul li {
+    color: #333333; /* Dark grey for general list items */
+}
+a {
+    color: #5C6BC0; /* Muted blue links */
+    text-decoration: none;
+}
+a:hover {
+    color: #66BB6A; /* Soft green hover effect */
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    #Rsec1, section {
+        margin: 10px 20px;
+    }
+    #Rheader {
+        padding: 10px;
+    }
+}/*Resume.html page CSS ends*/
+
+/*projects.html page CSS starts*/
+#Pbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #5C6BC0; /* White background */
+    color: #333333; /* Dark grey text */
+    font-size: x-small;
+}
+#Pheader {
+    background-color: #5C6BC0; /* Muted blue background */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 20px 10px;
+}
+#Ph1 {
+    margin: 0;
+    font-size: 2rem;
+}
+#PheaderP {
+    margin: 5px 0;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#projects-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #E0E0E0; /* Light grey border */
+    background-color: #F9F9F9; /* Light greyish white for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.project {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #E0E0E0; /* Light grey border */
+    background-color: #E8F5E9; /* Light green for project container */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project.active {
+    display: block;
+}
+.project-title {
+    color: #66BB6A; /* Soft green for project titles */
+    margin-bottom: 10px;
+}
+.project-description, .project-date, .project-technologies {
+    color: #333333; /* Dark grey text for descriptions */
+    margin-bottom: 10px;
+}
+.project-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow around images */
+}
+.nav-btn {
+    background-color: #5C6BC0; /* Muted blue */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-btn:hover {
+    background-color: #66BB6A; /* Soft green hover effect */
+    color: #FFFFFF; /* Keep text white on hover */
+}
+#prevBtn{
+    font-size: xx-small;
+}
+#nextBtn{
+    font-size: xx-small;
+}/*projects.html page CSS ends*/
+
+/*contact.html page CSS starts*/
+#Cbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #5C6BC0; /* White background */
+    color: #333333; /* Dark grey text */
+    font-size: x-small;
+}
+#Cheader {
+    background-color: #5C6BC0; /* Muted blue */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 20px 10px;
+}
+#Ch1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family:serif;
+}
+#CheaderP {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-family: serif;
+}
+#contact-form-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #F9F9F9; /* Light greyish white for contrast */
+    border: 1px solid #E0E0E0; /* Light grey border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    font-weight: bold;
+    color: #5C6BC0; /* Muted blue for labels */
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #E0E0E0; /* Light grey border for inputs */
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White background for inputs */
+}
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #66BB6A; /* Highlight with soft green */
+    outline: none;
+    background-color: #FFFFFF;
+}
+#formGroup {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    gap: 10px; /* Add spacing between the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+}
+input {
+    height: 5px; /* Set the desired height */
+    font-size: 5px; /* Adjust the font size for text inside the input */
+}
+input::placeholder {
+    font-size: 10px; /* Adjust the size as needed */
+    color: gray; /* Optional: Customize the color */
+    font-style: italic; /* Optional: Add style if desired */
+}
+textarea {
+    height: 5px; /* Set the desired height */
+    font-size: 5px; /* Adjust the font size for text inside the input */
+}
+textarea::placeholder {
+    font-size: 10px; /* Adjust the size as needed */
+    color: gray; /* Optional: Customize the color */
+    font-style: italic; /* Optional: Add style if desired */
+}
+.submitBtn {
+    background-color: #66BB6A; /* Soft green */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: xx-small;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.submitBtn:hover {
+    background-color: #5C6BC0; /* Muted blue hover effect */
+    color: #FFFFFF; /* Keep text white on hover */
+}/*contact.html page CSS starts*/
+
+
+
+/* General Page Styling */
+body#Pbody {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+/* Header Styling */
+#Pheader {
+    background-color: #cfd4f0;;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid #727ec5;;
+}
+
+#Ph1 {
+    font-size: 36px;
+    color: #5C6BC0;;
+    margin: 0;
+}
+
+#PheaderP {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Projects Container */
+#projects-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+/* Individual Painting/Project */
+.project {
+    background-color: #cfd4f0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-title2 {
+    text-align: center;
+    font-size: 24px;
+    color: #5C6BC0;;
+    margin-bottom: 10px;
+}
+
+.project-description2 {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 15px;
+    
+}
+
+/* Painting Image */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ffe0cc;
+}
